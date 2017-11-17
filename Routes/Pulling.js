@@ -114,19 +114,4 @@ module.exports = function(app) {
 
 
     });
-
-
-     app.post('/createproject', function(request, response, next) {
-        var project = request.body.project;
-        var userid = request.body.user;
-
-
-        request.getConnection(function(error, connection) {
-
-            if (error) return next("Impossible de ce connecter");
-            console.log("Pull request");
-            console.log("Test");
-        });
-    });
-
 }
